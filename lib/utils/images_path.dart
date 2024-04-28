@@ -19,6 +19,7 @@ class ImagePath {
   static const String rectangle2 = "assets/images/Rectangle2.png";
   static const String rectangle3 = "assets/images/Rectangle3.png";
   static const String rectangle4 = "assets/images/Rectangle4.png";
+  static const String rectangle5 = "assets/images/Rectangle5.png";
   static const String talking_man = "assets/images/talking_man.png";
   static const String twitter = "assets/images/tw.png";
   static const String uber_eats_logo = "assets/images/Uber_Eats_Logo.png";

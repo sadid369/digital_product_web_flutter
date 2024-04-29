@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class ImagePath {
   static const String airbnb_logo = "assets/images/Airbnb_logo.png";
   static const String amazon_logo = "assets/images/Amazon_logo.png";

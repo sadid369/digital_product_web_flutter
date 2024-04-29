@@ -2,89 +2,96 @@ import 'package:digital_product_web_flutter/utils/images_path.dart';
 import 'package:flutter/material.dart';
 
 class Navbar extends StatefulWidget {
-  const Navbar({Key? key}) : super(key: key);
+  const Navbar({super.key});
 
   @override
-  _NavbarState createState() => _NavbarState();
+  NavbarState createState() => NavbarState();
 }
 
-class _NavbarState extends State<Navbar> {
+class NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
+    // final height = MediaQuery.of(context).size.height;
     return Container(
       padding: EdgeInsets.symmetric(
-          horizontal: width * 0.06, vertical: height * 0.03),
+          horizontal: width * 0.05, vertical: width * 0.02),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(ImagePath.logo),
+          SizedBox(
+            width: width * 0.07,
+            // height: width * 0.1,
+            child: Image.asset(
+              ImagePath.logo,
+              fit: BoxFit.contain,
+            ),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Home',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'What We Do',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Service',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Project',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Blog',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Contact',
                   style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+                    fontSize: width * 0.01,
+                    fontWeight: FontWeight.w800,
                     color: Colors.black,
                   ),
                 ),

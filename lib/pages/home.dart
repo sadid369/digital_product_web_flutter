@@ -3,23 +3,21 @@ import 'package:digital_product_web_flutter/pages/navbar.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Navbar(),
-            Container1(),
-          ],
-        ),
+    return const Scaffold(
+      body: Column(
+        children: [
+          Navbar(),
+          Container1(),
+        ],
       ),
     );
   }

@@ -45,6 +45,7 @@ class Container2State extends State<Container2> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Container(
+      padding: EdgeInsets.only(left: width * 0.02),
       height: height * 0.8,
       child: LayoutBuilder(
         builder: (context, constraints) {

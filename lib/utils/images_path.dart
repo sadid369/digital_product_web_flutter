@@ -14,6 +14,7 @@ class ImagePath {
   static const String fb = "assets/images/fb.png";
   static const String google_logo = "assets/images/Google_logo.png";
   static const String group_70 = "assets/images/Group_70.png";
+  static const String dot = "assets/images/Dot.png";
   static const String group_71 = "assets/images/Group_71.png";
   static const String linkedIn = "assets/images/in.png";
   static const String logo = "assets/images/logo.png";

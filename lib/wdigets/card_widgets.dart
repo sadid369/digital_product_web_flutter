@@ -32,7 +32,7 @@ class CardWidgets extends StatelessWidget {
             color: Colors.grey.withOpacity(0.1),
             spreadRadius: 3,
             blurRadius: 2,
-            offset: Offset(1, 3), // changes position of shadow
+            offset: const Offset(1, 3), // changes position of shadow
           ), //BoxShadow
         ],
         borderRadius: BorderRadius.circular(25),
